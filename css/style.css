@@ -6,7 +6,8 @@
     font-family: 'Roboto Mono', monospace;
 }
 body{
-    max-height: 100%;
+    max-height: 1800px;
+    min-height: 360px; 
     overflow: hidden;
     background:linear-gradient(to bottom,black,rgba(53, 52, 52, 0.552));
 }
@@ -54,11 +55,92 @@ header{
     color: aliceblue;
     
 }
+#box_logica{
+    background-color: rgba(54, 61, 96,.4); 
+}
+#box_cbi{
+    background-color: rgba(133, 41, 41, 0.4); 
+}
+
+
+
+
+
+#box_btn{
+    display:none;
+    margin: 10px;
+    padding-top: 10px;
+    width: 300px;
+    height: 400px;
+    color: aliceblue;
+}
+@media screen and (max-width: 900px) {
+
+    
+    .box-text{
+        margin: 10px;
+        padding-top: 10px;
+        width: 300px;
+        height: 400px;
+        overflow-y: scroll;
+        color: aliceblue;
+        
+    }
+    header img{
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 735px) {
+    
+        #box_logica{
+           display:none 
+        }
+        #box_cbi{
+            display:none 
+        }
+        header img{
+            width: 300px;
+        }
+        #box_btn{
+            display: block;
+        }
+    
+    header img{
+        width: 300px;
+    }
+    #box_btn{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column-reverse;
+    }
+}
+.btn{
+    width: 10rem;
+    height:5rem;
+    font-size: large;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+    color:whitesmoke;
+    padding: 7px;
+    border-radius: 15px;
+    border: none;
+    background-color: rgba(54, 61, 96,.4);
+    box-shadow: 0px 0px 10px 10px rgba(242, 5, 52,.4);
+    margin-top: 10px;
+}
+.btn:hover{
+    width: 17rem;
+    height:9rem;
+    font-size: xx-large;
+}
+
 
 .box-text::-webkit-scrollbar {
     scroll-padding: 10px;
     width: 10px;      
-        /* width of the entire scrollbar */
+        
   }
   
 .box-text::-webkit-scrollbar-track {
@@ -67,7 +149,7 @@ header{
     
   }
 .box-text::-webkit-scrollbar-thumb {
-    background-color: rgb(242, 5, 52);
+    /* background-color: rgb(242, 5, 52); */
     border-radius: 50px;
     
     /* box-shadow: 0px 0px 10px 5px rgb(242, 5, 52); */
@@ -84,6 +166,9 @@ header{
     box-shadow: 0px 15px 15px 0px rgb(242, 5, 52);
     
 }
+
+
+
 .box-item{
     height: 60px;
     box-shadow: 0px 4px 5px 0px rgba(242, 5, 52,.5);
@@ -96,7 +181,7 @@ header{
     font-family: Arial, Helvetica, sans-serif;
     font-size: large;
     text-align: start;
-    border-bottom: 2px solid rgba(53, 52, 52, 0.5);
+    border-bottom: 2px solid rgba(53, 52, 52, 0.7);
 }
 .box-item i{
     align-self: center;
@@ -119,7 +204,6 @@ footer{
     margin-top: 10px;
     margin-bottom: 15px;
     padding: 10px;
-    border: 1px solid rgb(187, 255, 0);
     font-size: large;
     text-align: center;
     height: 50px;
