@@ -77,17 +77,13 @@ header{
 @media screen and (max-width: 900px) {
 
     .box-text{
-        margin: 10px;
+        margin: 10px auto;
         padding-top: 10px;
-        width: 300px;
+        width: 95%;
         height: 400px;
         overflow-y: scroll;
         color: aliceblue;
-    }
-    .box-item{
-        height: 90%;
-        padding-left: 5px;
-        margin-left: 5px;
+        
     }
     header img{
         width: 400px;
@@ -137,8 +133,9 @@ header{
     .box-item a:hover{
         padding-right: 10px;
         color: rgb(242, 5, 52);
-        font-size: small;
+        font-size:small;
     }
+
 }
 .btn{
     width: 10rem;
@@ -196,6 +193,7 @@ header{
 
 
 .box-item{
+    height: 60px;
     box-shadow: 0px 4px 5px 0px rgba(242, 5, 52,.5);
     height: 70px;
     margin-top: 10px;
