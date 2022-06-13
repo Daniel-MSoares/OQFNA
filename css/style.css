@@ -19,7 +19,6 @@ body{
 }
 .modal{
     border-radius: 10px;
-    display:none;
     position:absolute;
     height: 90%;
     width: 70%;
