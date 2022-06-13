@@ -15,12 +15,36 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css" 
        integrity="sha384-/frq1SRXYH/bSyou/HUp/hib7RVN1TawQYja658FEOodR/FQBKVqT9Ol+Oz3Olq5"
         crossorigin="anonymous">
+       
 </head>
 <body> 
     <div class="container">
         <header class="top"><img src="img/logo1.png" alt="sigla o.q.f.n.a"></header>
          <section class="container-box">
+          <div id='modal' class="modal">
+           <h1><button onclick="dismissModal()"> X </button> Projeto meio ambiente</h1>
+           <h2> Eu cuido, você cuida e nós vivemos</h2><hr>
+           <h3>O impacto da tecnologia sobre o planeta:</h3>
+           <div class='videos'>
+             <iframe  src="https://www.youtube.com/embed/YIL4QRPkZU4" title="YouTube video player"
+              frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+             allowfullscreen></iframe>
 
+            <iframe src="https://www.youtube.com/embed/usMTpyrKwic" title="YouTube video player"
+                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+
+            <iframe src="https://www.youtube.com/embed/hGF7VHQ9F7w" title="YouTube video player"
+                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/07Zr-9qT-vs" title="YouTube video player"
+                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+
+           </div>
+
+          </div>
 
           <div class="box" id="box_logica">
              <div class="box-title"><h1>Introdução à lógica</h1></div>
@@ -45,8 +69,7 @@
                     <h1>Simbologia dos diagramas de Chapin</h1>
                     <span><a href="https://drive.google.com/file/d/1qHB2ruHFlIJCaxweFboee_231mpRVQhA/view?usp=sharing"
                          target="_blank"><i class="fa-solid fa-file-pdf"></i>visualizar Arquivo em pdf</a></span>
-                </div>
-                
+                </div>    
             </div>
         </div>
          <div class="box" id="box_cbi">
@@ -72,7 +95,7 @@
            </div>
          </div>
          </section>
-         <footer><small>DanielMsoares-Introdução à lógica e Conhecimentos Básicos em informática V.1.0.0 em construção</small></footer>
+         <footer> <img class='aviso' onclick="showModal()" width="40px" src="img/arvore.png" alt="icone de arvore"><small>DanielMsoares-Introdução à lógica e Conhecimentos Básicos em informática V.1.0.0 em construção</small></footer>
     </div> 
 </body>
 <script src="js/app.js"></script>
