@@ -12,6 +12,7 @@ body{
     background:linear-gradient(to bottom,black,rgba(53, 52, 52, 0.552));
 }
 .aviso{
+    display:none;
     border: 3px solid yellow;
     border-radius:50%;
     padding: 5px;
